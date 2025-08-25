@@ -26,6 +26,27 @@ This command generates static content into the `build` directory and can be serv
 
 ## Deployment
 
+### GitHub Pages via GitHub Actions (recommended)
+
+This repository includes a workflow at `.github/workflows/deploy-docs.yml` that builds and deploys the site automatically on pushes to `main`.
+
+1. Ensure `docusaurus.config.ts` has the correct values:
+   - `url: 'https://<your-org>.github.io'`
+   - `baseUrl: '/<your-repo>/'`
+   - `organizationName: '<your-org>'`
+   - `projectName: '<your-repo>'`
+
+2. In GitHub → Settings → Pages:
+   - Source: GitHub Actions
+
+3. Push to `main`. The workflow will:
+   - Install deps, build the site from `xode-doc/`
+   - Upload `xode-doc/build` to GitHub Pages
+
+Your site will be available at `https://<your-org>.github.io/<your-repo>/`.
+
+### One-off local deploy (optional)
+
 Using SSH:
 
 ```bash
@@ -38,4 +59,10 @@ Not using SSH:
 GIT_USER=<Your GitHub username> yarn deploy
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+If you are using GitHub pages for hosting, this command builds the website and pushes to the `gh-pages` branch.
+
+### Custom domain
+
+1. In GitHub → Settings → Pages, set your custom domain (e.g., `docs.xode.net`).
+2. Add a DNS CNAME record pointing your domain to `<your-org>.github.io`.
+3. Optionally create `static/CNAME` with the domain name to persist it across deploys.
