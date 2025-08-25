@@ -14,11 +14,11 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // Set the production url of your site here
-  url: 'https://dhvll.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/xode-doc/',
+  // Set the production url of your site here (Vercel/Custom domain)
+  // Replace with your actual domain, e.g., 'https://docs.yourdomain.com'
+  url: 'https://xode-docs.vercel.app',
+  // Serve the site from the domain root on Vercel
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
