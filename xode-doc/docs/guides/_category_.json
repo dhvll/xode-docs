@@ -1,0 +1,11 @@
+{
+  "label": "Guides",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "title": "Guides",
+    "description": "How-to guides for common tasks and workflows."
+  }
+}
+
+
