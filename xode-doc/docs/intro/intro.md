@@ -72,9 +72,9 @@ Before you begin building with Xode, make sure you have:
 This documentation is organized into several sections:
 
 - **[Guides](/docs/guides/contributing)**: Step-by-step instructions for common tasks
-- **[Tutorials](/docs/tutorials/getting-started)**: Complete walkthroughs for building applications
-- **[Reference](/docs/reference)**: API documentation and technical specifications
-- **[Governance](/docs/governance)**: Protocol governance and community processes
+- **[Tutorials](/docs/intro/start)**: Complete walkthroughs for building applications
+- **[Reference](/docs/intro/xodeblockchain)**: Technical overview and key components
+- **[Governance](/docs/intro/xodegovernance)**: Protocol governance and community processes
 
 ## Community and Support
 
@@ -85,6 +85,6 @@ This documentation is organized into several sections:
 
 ## Next Steps
 
-Ready to start building? Check out our [Getting Started tutorial](/docs/tutorials/getting-started) to create your first Xode application, or explore our [Guides](/docs/guides/contributing) for specific development tasks.
+Ready to start building? Check out our [Getting Started tutorial](/docs/intro/start) to create your first Xode application, or explore our [Guides](/docs/guides/contributing) for specific development tasks.
 
-For developers looking to contribute to the Xode protocol itself, see our [Contributing Guide](/docs/guides/contributing) and [Governance documentation](/docs/governance).
+For developers looking to contribute to the Xode protocol itself, see our [Contributing Guide](/docs/guides/contributing) and [Governance documentation](/docs/intro/xodegovernance).
